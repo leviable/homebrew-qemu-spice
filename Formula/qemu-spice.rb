@@ -4,6 +4,7 @@ class QemuSpice < Formula
   url "https://download.qemu.org/qemu-9.2.4.tar.xz"
   sha256 "f3cc1c4eabfdb288218ac3e33763dbe9e276d8bc890b867a2335d58de2ddd39a"
   license "GPL-2.0-only"
+  revision 1
   head "https://gitlab.com/qemu-project/qemu.git", branch: "master"
 
   livecheck do
