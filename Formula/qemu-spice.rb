@@ -11,6 +11,12 @@ class QemuSpice < Formula
     regex(/href=.*?qemu[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/leviable/qemu-spice"
+    sha256 arm64_sequoia: "207e64992474524712f561c99eca9142301a6ad3f8701834260625b544dbe83b"
+    sha256 ventura:       "14e5c4bb93f7e95bdd6859edc630414a77544bca7e7b8531f59c56d64118ee5d"
+  end
+
   depends_on "libtool" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
